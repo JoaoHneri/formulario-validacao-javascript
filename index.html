@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Validações em JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+<body>
+    <main>
+    <h1>Formulário com <br> Validação Javascript</h1>
+    <form id="form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Ex.: João">
+
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" placeholder="example@example.com" id="email">
+
+        <label for="Telefone">Telefone:</label>
+        <input type="tel" maxlength="15" id="telefone" onkeyup="handlePhone(event)" placeholder="Apenas Números">
+
+        <label for="trab">Situação de trabalho:</label>
+        <select name="trab" id="trab">
+        <option value="">Está buscando emprego?</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" placeholder="Limite de 200 caracteres" maxlength="200"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</main>
+    <script src="./js/scripts.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
