@@ -5,9 +5,9 @@
 
 body{
     padding: 1rem;
-    background: url(../images/26786.png);
-
-    
+    background-image: url(../images/26786.png);
+    background-size:100%;
+    background-repeat: no-repeat;
 }
 
 h1{
