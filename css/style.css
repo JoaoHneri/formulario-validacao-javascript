@@ -6,7 +6,7 @@
 body{
     padding: 1rem;
     background-image: url(../images/26786.png);
-    background-size:100%;
+    background-size:cover;
     background-repeat: no-repeat;
 }
 
